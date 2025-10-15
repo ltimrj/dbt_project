@@ -1,4 +1,3 @@
-
 SELECT *
 FROM (
     SELECT * FROM {{ ref('customer') }}
