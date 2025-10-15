@@ -1,7 +1,7 @@
 
 SELECT *
 FROM (
-    SELECT * FROM {{ ref('customer_src') }}
+    SELECT * FROM {{ ref('customer') }}
     EXCEPT
     SELECT * FROM {{ ref('customer_tgt') }}
 ) AS mismatched
